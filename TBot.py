@@ -24,6 +24,11 @@ def sendPhoto(path):
     bot.send_photo(ID, open(path, 'rb'))
 
 
+def msg(key):
+    ID = getID()
+    bot.send_message(ID, key)
+
+
 def getID():
     with open(path, "r") as f:
         ID = f.readline()
